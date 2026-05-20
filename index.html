@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid Floating Menu</title>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- MENU -->
+
+<div class="menuWrap">
+    <div class="wavePanel"></div>
+    <ul class="menu">
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-star"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    const menu = document.querySelector('.menu');
+    const toggle = document.querySelector('.toggle');
+    toggle.onclick = () => {
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
